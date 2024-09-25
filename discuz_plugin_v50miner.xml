@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<root>
+	<item id="Title"><![CDATA[Discuz! Plugin]]></item>
+	<item id="Version"><![CDATA[X3.5]]></item>
+	<item id="Time"><![CDATA[2024-06-23 23:05]]></item>
+	<item id="From"><![CDATA[Discuz! Board (http://localhost:8080/)]]></item>
+	<item id="Data">
+		<item id="plugin">
+			<item id="available"><![CDATA[1]]></item>
+			<item id="adminid"><![CDATA[0]]></item>
+			<item id="name"><![CDATA[miner]]></item>
+			<item id="identifier"><![CDATA[v50miner]]></item>
+			<item id="description"><![CDATA[]]></item>
+			<item id="datatables"><![CDATA[]]></item>
+			<item id="directory"><![CDATA[v50miner/]]></item>
+			<item id="copyright"><![CDATA[913]]></item>
+			<item id="version"><![CDATA[1.0]]></item>
+			<item id="__modules">
+				<item id="0">
+					<item id="name"><![CDATA[reward_edit]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[编辑奖品]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+				<item id="1">
+					<item id="name"><![CDATA[reward_log]]></item>
+					<item id="param"><![CDATA[]]></item>
+					<item id="menu"><![CDATA[抽奖记录]]></item>
+					<item id="url"><![CDATA[]]></item>
+					<item id="type"><![CDATA[3]]></item>
+					<item id="adminid"><![CDATA[0]]></item>
+					<item id="displayorder"><![CDATA[0]]></item>
+					<item id="navtitle"><![CDATA[]]></item>
+					<item id="navicon"><![CDATA[]]></item>
+					<item id="navsubname"><![CDATA[]]></item>
+					<item id="navsuburl"><![CDATA[]]></item>
+				</item>
+			</item>
+		</item>
+		<item id="version"><![CDATA[X3.5]]></item>
+		<item id="var">
+			<item id="0">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[单抽道具ID]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[miner_magic_one]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[27]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="1">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[十连道具ID]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[miner_magic_ten]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[28]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="2">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[保底奖品开始ID]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[miner_slice]]></item>
+				<item id="type"><![CDATA[number]]></item>
+				<item id="value"><![CDATA[12]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="3">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[奖品分类]]></item>
+				<item id="description"><![CDATA[一行一个分类，格式：
+分类ID|显示名]]></item>
+				<item id="variable"><![CDATA[miner_cat]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[common|普通
+rare|稀有
+epic|史诗
+legend|传说
+custom|FFF]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="4">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[自定义CSS]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[miner_custom_css]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[	.reward-type-common{
+		--bgcolor: #fff9;
+	}
+	.reward-type-common:hover{
+		background-color: var(--bgcolor,#ffffff 9);
+	}
+	.reward-type-rare{
+		--bgcolor: rgba(128,191,255,0.4);
+		filter: drop-shadow(0 0 4px #80bfff);
+	}
+	.reward-type-rare:hover{
+		background-color: var(--bgcolor,#ffffff 9);
+	}
+	.reward-type-epic{
+		--bgcolor: #df80ff66;
+		filter: drop-shadow( 0 0 6px #df80ff );
+	}
+	.reward-type-legend{
+		--bgcolor: #ffdf8066;
+		filter: drop-shadow(0 0 8px #ffdf80);
+	}
+	.reward-type-epic:hover{
+		background-color: var(--bgcolor,#ffffff 9);
+	}
+	.reward-type-legend:hover{
+		background-color: var(--bgcolor,#ffffff 9);
+	}]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="5">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[抽奖页面说明HTML]]></item>
+				<item id="description"><![CDATA[]]></item>
+				<item id="variable"><![CDATA[miner_custom_html]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[<span style=:"color:red;">HELLO WORLD</span>]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+			<item id="6">
+				<item id="displayorder"><![CDATA[0]]></item>
+				<item id="title"><![CDATA[保底奖品分类]]></item>
+				<item id="description"><![CDATA[一行一个分类ID]]></item>
+				<item id="variable"><![CDATA[miner_save_cat]]></item>
+				<item id="type"><![CDATA[textarea]]></item>
+				<item id="value"><![CDATA[legend
+epic]]></item>
+				<item id="extra"><![CDATA[]]></item>
+			</item>
+		</item>
+		<item id="installfile"><![CDATA[install.php]]></item>
+	</item>
+</root>

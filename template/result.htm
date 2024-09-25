@@ -1,0 +1,20 @@
+<div class="miner-result-box">
+    <!--{loop $res $key $imgtext}-->
+        <div class="reward-box reward-type-$imgtext['lvl']">
+            <img src="source/plugin/v50miner/template/images/$imgtext['img']"/>
+            <span class="reward-text">$imgtext['text']</span>
+        </div>
+        <!--{if $key==4}--><br><!--{/if}-->
+    <!--{/loop}-->
+</div>
+<div class="miner-buttons">
+    <form id="miner-again" method="post">
+        <input type="hidden" name="domine" value="$mode">
+        <input type="hidden" name="formhash" value="{FORMHASH}">
+        <input type="submit" class="miner-start miner-again" value="再来一次"/>
+    </form>
+    <form id="miner-back" method="get" action="plugin.php">
+        <input type="hidden" name="id" value="v50miner:home">
+        <input type="submit" class="miner-start miner-back" value="返回"/>
+    </form>
+</div>

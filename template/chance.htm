@@ -1,0 +1,12 @@
+<!--{loop $chance $key $val}-->
+<h3 class="reward-title">$val['text']</h3>
+<div class="reward-list" id="reward-$key">
+    <!--{loop $val['items'] $key2 $imgtext}-->
+    <div class="reward-box reward-type-$key">
+        <img src="source/plugin/v50miner/template/images/$imgtext['img']"/>
+        <span class="reward-text">$imgtext['text']</span>
+        <span class="reward-chance">概率:$imgtext['chance']</span>
+    </div>
+    <!--{/loop}-->
+</div>
+<!--{/loop}-->

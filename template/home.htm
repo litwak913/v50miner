@@ -1,0 +1,75 @@
+<!--{template common/header}-->
+<style>
+	.reward-box{
+		display: inline-block;
+		margin: 0 10px;
+		transition: 0.25s ease;
+		padding: 0 10px;
+		text-align: center;
+	}
+	.reward-text{
+		display: block;
+	}
+	.reward-title{
+		font-size: large;
+	}
+	.miner-buttons{
+		text-align: center;
+		margin-top: auto;
+		margin-bottom: 20px;
+	}
+	.miner-result-box{
+		text-align: center;
+	}
+	.miner-buttons form{
+		display: inline;
+	}
+	.miner-start {
+		width: 100px;
+		height: 50px;
+	}
+	.miner-start-1,.miner-again{
+		margin-right: 100px;
+	}
+	.miner-image{
+		height: 450px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		background-image: url(source/plugin/v50miner/template/images/back.jpg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+</style>
+$custom_css
+<div id="pt" class="bm cl">
+	<div class="z">
+		<a href="./" class="nvhm" title="{lang homepage}">$_G[setting][bbname]</a> <em>&rsaquo;</em>
+		<a href="plugin.php?id=v50miner:home">挖矿</a>
+	</div>
+</div>
+<div id="ct" class="ct2_a wp cl">
+	<div class="mn">
+		<!--{if $_POST[domine]}-->
+			<!--{subtemplate v50miner:result}-->
+		<!--{elseif $_GET[action]=='chance'}-->
+			<!--{subtemplate v50miner:chance}-->
+		<!--{elseif $_GET[action]=='log'}-->
+			<!--{subtemplate v50miner:log}-->
+		<!--{else}-->
+			<!--{subtemplate v50miner:ready}-->
+		<!--{/if}-->
+	</div>
+	<div class="appl">
+		<div class="tbn">
+			<h2 class="mt bbda">挖矿</h2>
+			<ul>
+				<li{if empty($_GET[action])} class="a"{/if}><a href="plugin.php?id=v50miner:home">进行开采</a></li>
+				<li{if $_GET[action] == 'chance'} class="a"{/if}><a href="plugin.php?id=v50miner:home&action=chance">概率公示</a></li>
+				<li{if $_GET[action] == 'log'} class="a"{/if}><a href="plugin.php?id=v50miner:home&action=log">挖矿记录</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--{template common/footer}-->
